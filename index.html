@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Política de seguridad. GitHub Pages no admite cabeceras HTTP propias, por eso va en un meta.
+       Si agregas scripts, fuentes o imágenes de otro dominio, hay que permitirlos aquí (y en las demás páginas).
+       No quites connect-src 'self': sin él, Lighthouse no puede leer robots.txt y baja la nota de SEO. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
 
   <!-- SEO básico -->
   <title>Tuins: encuentra con quién ir a tus planes en Quito</title>
@@ -53,6 +57,7 @@
         "name": "Tuins",
         "url": "https://josueantuanb.github.io/tuins/",
         "logo": "https://josueantuanb.github.io/tuins/assets/icons/icon-512.png",
+        "sameAs": ["https://github.com/josueantuanB/tuins"],
         "founder": { "@type": "Person", "name": "Antuan Barahona" }
       },
       {
@@ -72,7 +77,15 @@
         "inLanguage": "es",
         "isPartOf": { "@id": "https://josueantuanb.github.io/tuins/#sitio" },
         "about": { "@id": "https://josueantuanb.github.io/tuins/#app" },
+        "breadcrumb": { "@id": "https://josueantuanb.github.io/tuins/#migas" },
         "primaryImageOfPage": "https://josueantuanb.github.io/tuins/assets/og/tuins-og.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://josueantuanb.github.io/tuins/#migas",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://josueantuanb.github.io/tuins/" }
+        ]
       },
       {
         "@type": "MobileApplication",
@@ -380,11 +393,12 @@
         <p class="pie__copy">© 2026 Tuins</p>
       </div>
       <nav aria-label="Pie de página">
-        <!-- TODO: reemplazar # por las páginas y perfiles reales -->
         <ul>
-          <li><a href="#">Términos</a></li>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <!-- TODO: reemplazar # por los perfiles reales -->
           <li><a href="#">Instagram</a></li>
           <li><a href="#">TikTok</a></li>
         </ul>
