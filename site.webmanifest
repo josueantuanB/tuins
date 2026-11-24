@@ -1,0 +1,15 @@
+{
+  "name": "Tuins",
+  "short_name": "Tuins",
+  "description": "La app para encontrar con quién ir a tus planes.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F8F5EF",
+  "theme_color": "#2B1F7A",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

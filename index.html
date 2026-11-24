@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO básico -->
+  <title>Tuins: encuentra con quién ir a tus planes en Quito</title>
+  <meta name="description" content="Tuins es la app para encontrar con quién ir al cine, al fútbol o a una noche de juegos. Arma grupo con gente de Quito que quiere lo mismo que tú. Solo +18.">
+  <!-- Reemplaza https://josueantuanb.github.io/tuins por tu dominio real (aquí, en robots.txt y en sitemap.xml) -->
+  <link rel="canonical" href="https://josueantuanb.github.io/tuins/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#2B1F7A">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tuins">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:title" content="Tuins: encuentra tu tuin para cada plan">
+  <meta property="og:description" content="La app para encontrar con quién ir al cine, al fútbol o a una noche de juegos en Quito. Para hacer amigos, no para ligar.">
+  <meta property="og:url" content="https://josueantuanb.github.io/tuins/">
+  <meta property="og:image" content="https://josueantuanb.github.io/tuins/assets/og/tuins-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de Tuins con el texto: Encuentra tu tuin para cada plan.">
+
+  <!-- Tarjeta para X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tuins: encuentra tu tuin para cada plan">
+  <meta name="twitter:description" content="La app para encontrar con quién ir al cine, al fútbol o a una noche de juegos en Quito.">
+  <meta name="twitter:image" content="https://josueantuanb.github.io/tuins/assets/og/tuins-og.jpg">
+  <meta name="twitter:image:alt" content="Logo de Tuins con el texto: Encuentra tu tuin para cada plan.">
+
+  <!-- Íconos -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fuentes propias (sin peticiones a terceros) y estilos -->
+  <link rel="preload" href="assets/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Datos estructurados (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://josueantuanb.github.io/tuins/#organizacion",
+        "name": "Tuins",
+        "url": "https://josueantuanb.github.io/tuins/",
+        "logo": "https://josueantuanb.github.io/tuins/assets/icons/icon-512.png",
+        "founder": { "@type": "Person", "name": "Antuan Barahona" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://josueantuanb.github.io/tuins/#sitio",
+        "url": "https://josueantuanb.github.io/tuins/",
+        "name": "Tuins",
+        "inLanguage": "es",
+        "publisher": { "@id": "https://josueantuanb.github.io/tuins/#organizacion" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://josueantuanb.github.io/tuins/#pagina",
+        "url": "https://josueantuanb.github.io/tuins/",
+        "name": "Tuins: encuentra con quién ir a tus planes en Quito",
+        "description": "Tuins es la app para encontrar con quién ir al cine, al fútbol o a una noche de juegos. Arma grupo con gente de Quito que quiere lo mismo que tú. Solo +18.",
+        "inLanguage": "es",
+        "isPartOf": { "@id": "https://josueantuanb.github.io/tuins/#sitio" },
+        "about": { "@id": "https://josueantuanb.github.io/tuins/#app" },
+        "primaryImageOfPage": "https://josueantuanb.github.io/tuins/assets/og/tuins-og.jpg"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://josueantuanb.github.io/tuins/#app",
+        "name": "Tuins",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "SocialNetworkingApplication",
+        "description": "App para encontrar compañía para actividades y hacer amigos. Solo para mayores de 18 años.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://josueantuanb.github.io/tuins/#organizacion" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://josueantuanb.github.io/tuins/#preguntas",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Tuins es una app de citas?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Tuins es para encontrar compañía para actividades y hacer amigos. Si alguien la usa para otra cosa, puedes reportarlo." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quién puede usarla?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cualquier persona mayor de 18 años." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo crear mi propio plan?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Eliges la actividad, la fecha, el lugar y cuántas personas pueden unirse." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Y si no conozco a nadie del grupo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Esa es la idea: todos llegan buscando lo mismo. Antes del plan pueden hablar en el chat del grupo." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="cabecera__logo" href="./">
+        <img src="assets/img/tuins-logo.svg" width="115" height="36" alt="Tuins, ir al inicio">
+      </a>
+      <nav class="cabecera__nav" aria-label="Principal">
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#historia">Nuestra historia</a></li>
+        </ul>
+      </nav>
+      <a class="boton boton--primario boton--chico cabecera__cta" href="#descargar">Descargar la app</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="contenedor hero__grid">
+        <div class="hero__texto">
+          <p class="etiqueta">Para mayores de 18 · Quito</p>
+          <h1 id="hero-titulo">Encuentra tu tuin para cada plan.</h1>
+          <p class="hero__bajada">Tuins es la app para encontrar con quién ir: cine, fútbol, juegos de mesa, conciertos o una caminata. Arma grupo con gente de tu ciudad que quiere hacer lo mismo que tú. Para hacer amigos, no para ligar.</p>
+          <div class="botones">
+            <!-- TODO: reemplazar # por el enlace real de App Store -->
+            <a class="boton boton--primario" href="#">Descargar para iPhone</a>
+            <!-- TODO: reemplazar # por el enlace real de Google Play -->
+            <a class="boton boton--secundario" href="#">Descargar para Android</a>
+          </div>
+          <p class="hero__nota">Descargarla es gratis · iOS y Android</p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="telefono" role="img" aria-label="Pantalla de la app Tuins con planes cercanos: un partido de fútbol 5, un estreno de cine y una tarde de juegos de mesa.">
+            <div class="telefono__pantalla">
+              <div class="app__cabecera">
+                <div>
+                  <p class="app__titulo">Planes cerca de ti</p>
+                  <p class="app__sub">Quito · esta semana</p>
+                </div>
+                <span class="app__avatar">TÚ</span>
+              </div>
+              <div class="app__filtros">
+                <span class="filtro filtro--activo">Todos</span>
+                <span class="filtro">Deportes</span>
+                <span class="filtro">Cine</span>
+              </div>
+
+              <div class="plan">
+                <div class="plan__fila">
+                  <span class="plan__tag plan__tag--menta">Fútbol 5</span>
+                  <span class="plan__cupo">Faltan 2</span>
+                </div>
+                <p class="plan__titulo">Partido amistoso</p>
+                <p class="plan__meta">Sáb 10:00 · Parque La Carolina</p>
+                <div class="plan__fila">
+                  <span class="avatares"><span class="av av--menta">MA</span><span class="av av--mandarina">JP</span><span class="av av--indigo">LC</span><span class="av__mas">+3</span></span>
+                  <span class="plan__boton">Unirme</span>
+                </div>
+              </div>
+
+              <div class="plan">
+                <div class="plan__fila">
+                  <span class="plan__tag plan__tag--mandarina">Cine</span>
+                  <span class="plan__cupo">3 de 6</span>
+                </div>
+                <p class="plan__titulo">Estreno del viernes</p>
+                <p class="plan__meta">Vie 20:00 · Norte de Quito</p>
+                <div class="plan__fila">
+                  <span class="avatares"><span class="av av--menta">DR</span><span class="av av--mandarina">SV</span><span class="av__mas">+1</span></span>
+                  <span class="plan__boton">Unirme</span>
+                </div>
+              </div>
+
+              <div class="plan">
+                <div class="plan__fila">
+                  <span class="plan__tag plan__tag--lavanda">Juegos de mesa</span>
+                  <span class="plan__cupo">4 de 8</span>
+                </div>
+                <p class="plan__titulo">Tarde de juegos</p>
+                <p class="plan__meta">Dom 16:00 · La Floresta</p>
+                <div class="plan__fila">
+                  <span class="avatares"><span class="av av--menta">AN</span><span class="av av--mandarina">GM</span><span class="av av--indigo">PT</span><span class="av__mas">+1</span></span>
+                  <span class="plan__boton">Unirme</span>
+                </div>
+              </div>
+
+              <div class="app__barra">
+                <span class="activo">Explorar</span>
+                <span>Mis planes</span>
+                <span>Chat</span>
+                <span>Perfil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="seccion" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="contenedor">
+        <p class="antetitulo">Cómo funciona</p>
+        <h2 id="como-titulo">Del “¿alguien se apunta?” al plan, en tres pasos.</h2>
+        <ol class="pasos">
+          <li class="tarjeta paso">
+            <span class="paso__num paso__num--menta" aria-hidden="true">1</span>
+            <h3>Elige qué quieres hacer</h3>
+            <p>Busca por actividad, fecha y zona: desde un partido de fútbol hasta una noche de juegos.</p>
+          </li>
+          <li class="tarjeta paso">
+            <span class="paso__num paso__num--mandarina" aria-hidden="true">2</span>
+            <h3>Únete o crea tu plan</h3>
+            <p>Súmate a un grupo con cupos libres o publica el tuyo y decide cuántas personas pueden ir.</p>
+          </li>
+          <li class="tarjeta paso">
+            <span class="paso__num paso__num--indigo" aria-hidden="true">3</span>
+            <h3>Coordina y ve</h3>
+            <p>Hablen en el chat del grupo, confirmen el lugar y conózcanse en persona.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ACTIVIDADES -->
+    <section class="banda banda--indigo" id="actividades" aria-labelledby="act-titulo">
+      <div class="contenedor centrado">
+        <p class="antetitulo antetitulo--claro">Actividades</p>
+        <h2 id="act-titulo">Para cada plan, un grupo.</h2>
+        <p class="banda__bajada">Encuentra gente para ir al cine, hacer deporte, jugar juegos de mesa o practicar idiomas. Elige entre actividades como estas o crea la tuya.</p>
+        <ul class="chips">
+          <li class="chip chip--mandarina">Cine</li>
+          <li class="chip">Fútbol</li>
+          <li class="chip">Básquet</li>
+          <li class="chip">Pádel</li>
+          <li class="chip chip--menta">Juegos de mesa</li>
+          <li class="chip">Videojuegos</li>
+          <li class="chip">Conciertos</li>
+          <li class="chip chip--hueso">Senderismo</li>
+          <li class="chip">Café y conversación</li>
+          <li class="chip">Gimnasio</li>
+          <li class="chip">Fotografía</li>
+          <li class="chip chip--mandarina">Intercambio de idiomas</li>
+          <li class="chip">Ciclismo</li>
+          <li class="chip">Karaoke</li>
+          <li class="chip">Teatro</li>
+          <li class="chip chip--menta">Running</li>
+          <li class="chip chip--nuevo">+ Crea tu propio plan</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEGURIDAD -->
+    <section class="seccion" id="seguridad" aria-labelledby="seg-titulo">
+      <div class="contenedor seguridad">
+        <div class="seguridad__intro">
+          <p class="antetitulo">Seguridad</p>
+          <h2 id="seg-titulo">Amistad, sin presión.</h2>
+          <p>Tuins es para hacer planes y amigos. Si buscas citas, este no es el lugar: los perfiles, los grupos y las normas están pensados para compartir actividades.</p>
+        </div>
+        <ul class="garantias">
+          <li class="tarjeta garantia">
+            <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="22" fill="#D7F3E9"/><path d="M14 22.5l6 6 10-12" fill="none" stroke="#2B1F7A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Solo mayores de 18</h3>
+            <p>Cada cuenta confirma su edad al registrarse.</p>
+          </li>
+          <li class="tarjeta garantia">
+            <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="22" fill="#D7F3E9"/><path d="M14 22.5l6 6 10-12" fill="none" stroke="#2B1F7A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Perfiles verificados</h3>
+            <p>Una insignia muestra quién verificó su identidad.</p>
+          </li>
+          <li class="tarjeta garantia">
+            <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="22" fill="#D7F3E9"/><path d="M14 22.5l6 6 10-12" fill="none" stroke="#2B1F7A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Planes en lugares públicos</h3>
+            <p>Te sugerimos puntos de encuentro públicos para la primera vez.</p>
+          </li>
+          <li class="tarjeta garantia">
+            <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="22" fill="#D7F3E9"/><path d="M14 22.5l6 6 10-12" fill="none" stroke="#2B1F7A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Reporta y bloquea</h3>
+            <p>Si algo no se siente bien, lo reportas en dos toques.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA -->
+    <section class="banda banda--menta" id="historia" aria-labelledby="hist-titulo">
+      <div class="contenedor historia">
+        <img class="historia__simbolo" src="assets/img/tuins-simbolo-historia.svg" width="300" height="300" alt="" loading="lazy" decoding="async">
+        <div>
+          <p class="antetitulo antetitulo--indigo">Nuestra historia</p>
+          <h2 id="hist-titulo">Tuins viene de <span lang="en">twins</span>.</h2>
+          <blockquote class="historia__cita">
+            <p><span lang="en">Twins</span> significa «gemelos» en inglés, y yo tengo uno. Desde que tengo memoria, mi hermano ha sido mi compañero de juegos, de fiestas y de cada nuevo hobby. Nunca tuve que preguntarme con quién ir: siempre había alguien listo para decir «yo voy».</p>
+            <p>Con el tiempo entendí que no todos tienen esa suerte, y que muchos planes se quedan en nada solo porque no hay con quién ir. Por eso creé Tuins: para que tú también encuentres a tu tuin, esa persona que se apunta al plan contigo.</p>
+          </blockquote>
+          <p class="historia__firma">— Antuan Barahona, fundador de Tuins</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="seccion seccion--faq" id="preguntas" aria-labelledby="faq-titulo">
+      <div class="contenedor">
+        <h2 id="faq-titulo">Preguntas frecuentes</h2>
+        <div class="faq">
+          <div class="faq__item">
+            <h3>¿Tuins es una app de citas?</h3>
+            <p>No. Tuins es para encontrar compañía para actividades y hacer amigos. Si alguien la usa para otra cosa, puedes reportarlo.</p>
+          </div>
+          <div class="faq__item">
+            <h3>¿Quién puede usarla?</h3>
+            <p>Cualquier persona mayor de 18 años.</p>
+          </div>
+          <div class="faq__item">
+            <h3>¿Cuánto cuesta?</h3>
+            <!-- TODO: completar el modelo de precios -->
+            <p>Descargarla es gratis. [Funciones premium y precio por definir.]</p>
+          </div>
+          <div class="faq__item">
+            <h3>¿Dónde está disponible?</h3>
+            <!-- TODO: completar las próximas ciudades -->
+            <p>Empezamos en Quito. [Próximas ciudades por definir.]</p>
+          </div>
+          <div class="faq__item">
+            <h3>¿Puedo crear mi propio plan?</h3>
+            <p>Sí. Eliges la actividad, la fecha, el lugar y cuántas personas pueden unirse.</p>
+          </div>
+          <div class="faq__item">
+            <h3>¿Y si no conozco a nadie del grupo?</h3>
+            <p>Esa es la idea: todos llegan buscando lo mismo. Antes del plan pueden hablar en el chat del grupo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO FINAL -->
+    <section class="cta" id="descargar" aria-labelledby="cta-titulo">
+      <div class="contenedor">
+        <div class="cta__tarjeta">
+          <h2 id="cta-titulo">Tu próximo plan ya tiene compañía.</h2>
+          <p>Descarga Tuins y encuentra a tu tuin.</p>
+          <div class="botones">
+            <!-- TODO: reemplazar # por los enlaces reales de las tiendas -->
+            <a class="boton boton--acento" href="#">Descargar para iPhone</a>
+            <a class="boton boton--claro" href="#">Descargar para Android</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <div>
+        <img src="assets/img/tuins-logo.svg" width="96" height="30" alt="Tuins" loading="lazy" decoding="async">
+        <p class="pie__copy">© 2026 Tuins</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <!-- TODO: reemplazar # por las páginas y perfiles reales -->
+        <ul>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
