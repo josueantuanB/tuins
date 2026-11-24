@@ -675,6 +675,29 @@ section[id] { scroll-margin-top: 24px; }
 }
 .pie nav a:hover { color: var(--indigo); text-decoration: underline; }
 
+/* ---------- Páginas de texto (sobre nosotros, contacto, legales) ---------- */
+.migas ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--texto-suave);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.migas li + li::before { content: "›"; margin-right: 8px; }
+.migas a { display: inline-block; padding-block: 6px; }
+
+.pagina { max-width: 46rem; padding-block: 24px 96px; }
+.pagina h1 { font-size: clamp(2.25rem, 4.2vw, 3.25rem); }
+.pagina h2 { margin-top: 48px; font-size: 1.625rem; }
+.pagina p { margin-top: 16px; color: var(--texto-suave); }
+.pagina a { color: var(--indigo); font-weight: 700; }
+.pagina__fecha { font-size: 0.9375rem; font-weight: 600; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
   .seguridad,
